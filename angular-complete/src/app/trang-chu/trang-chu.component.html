@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Venue</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    .jumbotron {
+      background-image: url(../../assets/backgr.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Adjust the height as needed */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .jumbotron p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .btn-white {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #006400;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Wedding Venue</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">      
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="jumbotron">
+    <h1 class="display-4">Welcome to Wedding Venue</h1>
+    <p class="lead">Create your dream wedding at our beautiful venue</p>
+    <a class="btn btn-primary" routerLinkActive="active" routerLink="/qldh">Book Now</a>
+  </section>
+
+  <!-- About section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Welcome to our restaurant - a delightful culinary haven!
+             Indulge in a scrumptious array of dishes from around the world, expertly crafted by our talented chefs.
+              Savor the finest ingredients, impeccable service, and a warm ambiance
+             that guarantees an unforgettable dining experience. Come and enjoy a feast for your senses!</p>
+        </div>
+        <div class="col-md-6">
+          <img src="../../../assets/venue.jpg" alt="Venue" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../../assets/service4.jpg" class="card-img-top" alt="Service 1" >
+            <div class="card-body">
+              <h5 class="card-title">Wedding Planning</h5>
+              <p class="card-text">We offer professional wedding planning services to make your special day
+                unforgettable.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../../assets/service2.jpg" class="card-img-top" alt="Service 2" >
+            <div class="card-body">
+              <h5 class="card-title">Venue Decoration</h5>
+              <p class="card-text">Our expert decorators will transform the venue into a beautiful and elegant space
+                for
+                your wedding.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../../../assets/service3.jpg" class="card-img-top" alt="Service 3" >
+            <div class="card-body">
+              <h5 class="card-title">Catering</h5>
+              <p class="card-text">Enjoy a delicious and customized menu prepared by our experienced chefs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h5>Address:</h5>
+          <p>828 Su Van Hanh, District 10, Ho Chi Minh City.</p>
+          <h5>Phone:</h5>
+          <p>+1 234 567890</p>
+          <h5>Email:</h5>
+          <p>info@weddingvenue.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <div class="container">
+      <p>&copy; 2023 Wedding Venue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

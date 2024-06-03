@@ -1,0 +1,36 @@
+.header {
+    background-color: blueviolet;
+    width: 200px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .menu-container {
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+    z-index: 1;
+    background: whitesmoke;
+    display: none;
+    /* Thêm thuộc tính để xếp dọc menu */
+    flex-direction: column;
+  }
+  
+  /* Sử dụng flexbox để căn giữa các mục trong menu */
+  .menu a {
+    width: 100%;
+    min-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Hiển thị menu khi hover vào .menu-container */
+  .menu-container:hover .menu {
+    display: flex;
+  }
+   

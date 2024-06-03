@@ -1,0 +1,57 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/trang-chu">Wedding Venue</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/trang-chu"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/dashboard"
+              >Add Menu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/qldh"
+              >Order Management</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/staff"
+              >Staff Management</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/home"
+              >Menu
+            </a>
+          </li>
+          <li>
+            <a routerLink="/cart-page" class="nav-link" routerLinkActive="active"
+              >Cart <span *ngIf="cartQuantity">{{ cartQuantity }}</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/login"
+              >Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
